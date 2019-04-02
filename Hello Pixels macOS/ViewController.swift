@@ -28,6 +28,10 @@ class ViewController: NSViewController {
         }
         
     }
+    
+    override func viewDidAppear() {
+        view.window?.title = "Hello Pixels"
+    }
 
 }
 
