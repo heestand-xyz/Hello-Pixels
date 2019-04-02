@@ -1,30 +1,30 @@
 //
 //  ViewController.swift
-//  Hello Pixels iOS
+//  Hello Pixels macOS
 //
 //  Created by Hexagons on 2019-04-02.
 //  Copyright © 2019 Hexagons. All rights reserved.
 //
 
-import UIKit
-import Pixels
+import Cocoa
+import Pixels_macOS
 
-class ViewController: UIViewController {
+class ViewController: NSViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         view.addSubview(Render.main.final.view)
         
     }
     
-    override func viewWillLayoutSubviews() {
-        super.viewWillLayoutSubviews()
+    override func viewWillLayout() {
+        super.viewWillLayout()
         
         Render.main.final.view.frame = view.bounds
         
         for generator in Render.main.generators {
-            generator.res = .fullscreen
+            generator.res = .size(view.bounds.size) * 2
         }
         
     }
