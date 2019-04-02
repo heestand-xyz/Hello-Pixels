@@ -18,12 +18,12 @@
 		7404EEAB22534BA2004436F4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7404EEA922534BA2004436F4 /* Main.storyboard */; };
 		7404EEB322534BC2004436F4 /* Render.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7404EEB222534BC2004436F4 /* Render.swift */; };
 		7404EEB422534BD5004436F4 /* Render.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7404EEB222534BC2004436F4 /* Render.swift */; };
-		7404EEB622534CBA004436F4 /* Pixels_macOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7404EEB522534CBA004436F4 /* Pixels_macOS.framework */; };
-		7404EEB722534CBA004436F4 /* Pixels_macOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7404EEB522534CBA004436F4 /* Pixels_macOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		7404EEBA22534CC1004436F4 /* Pixels.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7404EEB922534CC1004436F4 /* Pixels.framework */; };
-		7404EEBB22534CC1004436F4 /* Pixels.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7404EEB922534CC1004436F4 /* Pixels.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		7404EEC122534D02004436F4 /* PixelsShaders.metallib in Resources */ = {isa = PBXBuildFile; fileRef = 7404EEBE22534CF0004436F4 /* PixelsShaders.metallib */; };
-		7404EEC222534D06004436F4 /* PixelsShaders-macOS.metallib in Resources */ = {isa = PBXBuildFile; fileRef = 7404EEC022534CFE004436F4 /* PixelsShaders-macOS.metallib */; };
+		74C10CBD2253A77400EA3CC0 /* Pixels_macOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74C10CBA2253A77200EA3CC0 /* Pixels_macOS.framework */; };
+		74C10CC12253A79500EA3CC0 /* Pixels.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74C10CB92253A77200EA3CC0 /* Pixels.framework */; };
+		74C10CC22253A79500EA3CC0 /* Pixels.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 74C10CB92253A77200EA3CC0 /* Pixels.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		74C10CC42253A79800EA3CC0 /* Pixels_macOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 74C10CBA2253A77200EA3CC0 /* Pixels_macOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		74C10CC52253A7AA00EA3CC0 /* PixelsShaders.metallib in Resources */ = {isa = PBXBuildFile; fileRef = 74C10CBB2253A77200EA3CC0 /* PixelsShaders.metallib */; };
+		74C10CC62253A7AF00EA3CC0 /* PixelsShaders-macOS.metallib in Resources */ = {isa = PBXBuildFile; fileRef = 74C10CBC2253A77200EA3CC0 /* PixelsShaders-macOS.metallib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -33,7 +33,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				7404EEB722534CBA004436F4 /* Pixels_macOS.framework in Embed Frameworks */,
+				74C10CC42253A79800EA3CC0 /* Pixels_macOS.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -44,7 +44,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				7404EEBB22534CC1004436F4 /* Pixels.framework in Embed Frameworks */,
+				74C10CC22253A79500EA3CC0 /* Pixels.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -67,10 +67,10 @@
 		7404EEAC22534BA2004436F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7404EEAD22534BA2004436F4 /* Hello_Pixels_macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Hello_Pixels_macOS.entitlements; sourceTree = "<group>"; };
 		7404EEB222534BC2004436F4 /* Render.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Render.swift; sourceTree = "<group>"; };
-		7404EEB522534CBA004436F4 /* Pixels_macOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Pixels_macOS.framework; sourceTree = "<group>"; };
-		7404EEB922534CC1004436F4 /* Pixels.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Pixels.framework; sourceTree = "<group>"; };
-		7404EEBE22534CF0004436F4 /* PixelsShaders.metallib */ = {isa = PBXFileReference; lastKnownFileType = "archive.metal-library"; path = PixelsShaders.metallib; sourceTree = "<group>"; };
-		7404EEC022534CFE004436F4 /* PixelsShaders-macOS.metallib */ = {isa = PBXFileReference; lastKnownFileType = "archive.metal-library"; path = "PixelsShaders-macOS.metallib"; sourceTree = "<group>"; };
+		74C10CB92253A77200EA3CC0 /* Pixels.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pixels.framework; path = Pixels/Pixels.framework; sourceTree = SOURCE_ROOT; };
+		74C10CBA2253A77200EA3CC0 /* Pixels_macOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pixels_macOS.framework; path = Pixels/Pixels_macOS.framework; sourceTree = SOURCE_ROOT; };
+		74C10CBB2253A77200EA3CC0 /* PixelsShaders.metallib */ = {isa = PBXFileReference; lastKnownFileType = "archive.metal-library"; name = PixelsShaders.metallib; path = Pixels/PixelsShaders.metallib; sourceTree = SOURCE_ROOT; };
+		74C10CBC2253A77200EA3CC0 /* PixelsShaders-macOS.metallib */ = {isa = PBXFileReference; lastKnownFileType = "archive.metal-library"; name = "PixelsShaders-macOS.metallib"; path = "Pixels/PixelsShaders-macOS.metallib"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,7 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7404EEBA22534CC1004436F4 /* Pixels.framework in Frameworks */,
+				74C10CC12253A79500EA3CC0 /* Pixels.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,7 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7404EEB622534CBA004436F4 /* Pixels_macOS.framework in Frameworks */,
+				74C10CBD2253A77400EA3CC0 /* Pixels_macOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,7 +99,7 @@
 				7404EEB122534BAF004436F4 /* Source */,
 				7404EE8A22534B63004436F4 /* Hello Pixels iOS */,
 				7404EEA222534BA1004436F4 /* Hello Pixels macOS */,
-				7404EEBD22534CCE004436F4 /* Frameworks */,
+				74C10CB82253A76200EA3CC0 /* Pixels */,
 				7404EE8922534B63004436F4 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -147,15 +147,16 @@
 			path = Source;
 			sourceTree = "<group>";
 		};
-		7404EEBD22534CCE004436F4 /* Frameworks */ = {
+		74C10CB82253A76200EA3CC0 /* Pixels */ = {
 			isa = PBXGroup;
 			children = (
-				7404EEB922534CC1004436F4 /* Pixels.framework */,
-				7404EEBE22534CF0004436F4 /* PixelsShaders.metallib */,
-				7404EEB522534CBA004436F4 /* Pixels_macOS.framework */,
-				7404EEC022534CFE004436F4 /* PixelsShaders-macOS.metallib */,
+				74C10CBA2253A77200EA3CC0 /* Pixels_macOS.framework */,
+				74C10CB92253A77200EA3CC0 /* Pixels.framework */,
+				74C10CBC2253A77200EA3CC0 /* PixelsShaders-macOS.metallib */,
+				74C10CBB2253A77200EA3CC0 /* PixelsShaders.metallib */,
 			);
-			name = Frameworks;
+			name = Pixels;
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -239,7 +240,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7404EEC122534D02004436F4 /* PixelsShaders.metallib in Resources */,
+				74C10CC52253A7AA00EA3CC0 /* PixelsShaders.metallib in Resources */,
 				7404EE9622534B65004436F4 /* LaunchScreen.storyboard in Resources */,
 				7404EE9322534B65004436F4 /* Assets.xcassets in Resources */,
 				7404EE9122534B63004436F4 /* Main.storyboard in Resources */,
@@ -250,9 +251,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				74C10CC62253A7AF00EA3CC0 /* PixelsShaders-macOS.metallib in Resources */,
 				7404EEA822534BA2004436F4 /* Assets.xcassets in Resources */,
 				7404EEAB22534BA2004436F4 /* Main.storyboard in Resources */,
-				7404EEC222534D06004436F4 /* PixelsShaders-macOS.metallib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -434,6 +435,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Pixels",
 				);
 				INFOPLIST_FILE = "Hello Pixels iOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -456,6 +458,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Pixels",
 				);
 				INFOPLIST_FILE = "Hello Pixels iOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -481,6 +484,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Pixels",
 				);
 				INFOPLIST_FILE = "Hello Pixels macOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -507,6 +511,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Pixels",
 				);
 				INFOPLIST_FILE = "Hello Pixels macOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
