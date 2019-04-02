@@ -1,0 +1,4 @@
+framework module Pixels_macOS {
+  header "Pixels_macOS-Swift.h"
+  requires objc
+}
