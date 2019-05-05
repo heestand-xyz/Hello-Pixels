@@ -33,7 +33,7 @@ class Render {
         noise.zPosition = .live / 10
         
         let gradient = GradientPIX(res: ._128)
-        gradient.style = .radial
+        gradient.direction = .radial
         gradient.extendRamp = .mirror
         
         final = polygon * 0.25 + circle * 0.25 + noise * !gradient

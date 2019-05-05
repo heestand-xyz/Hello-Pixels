@@ -24,7 +24,7 @@ class ViewController: NSViewController {
         Render.main.final.view.frame = view.bounds
         
         for generator in Render.main.generators {
-            generator.res = .size(view.bounds.size) * 2
+            generator.res = .custom(w: Int(view.bounds.size.width * 2), h: Int(view.bounds.size.height * 2))
         }
         
     }

@@ -8,6 +8,7 @@ powered by Metal - inspired by TouchDesigner
 [CameraPIX](DOCS.md#camerapix) -
 [ImagePIX](DOCS.md#imagepix) -
 [VideoPIX](DOCS.md#videopix) -
+[ScreenCapturePIX](DOCS.md#screencapturepix)-
 [ColorPIX](DOCS.md#colorpix) -
 [CirclePIX](DOCS.md#circlepix) -
 [RectanglePIX](DOCS.md#rectanglepix) -
@@ -59,7 +60,33 @@ Under development.
 
 --- 
 
-Note that Pixels dose not have simulator support. Metal for iOS can only run on a physical device.<b>
+## Install
+
+To get up and running, follow these steps:
+1. Download the framework and the metallib: [Pixels Beta v0.4.5 b777](https://github.com/hexagons/pixels/releases/download/0.4.5/Pixels_Beta_v0.4.5_b777.zip)
+2. Add the framework files in from the zip to the root of your Xcode project.
+3. In your project settings under *General* and *Embedded Binaries* add **Pixels.framework**.
+4. Then under *Build Phases* and *Copy Bundle Resources* add **PixelsShaders.metallib**.
+5. Now you can `import Pixels`.
+
+Note that Pixels dose not have simulator support. Metal for iOS can only run on a physical device.
+
+To gain camera access, on macOS, check Camera in the App Sandbox in your Xcode project settings under Capabilities.
+
+## Example
+
+[Hello Pixels](https://github.com/hexagons/Hello-Pixels)
+
+## Tutorials
+
+[Getting started with Pixels in Swift](http://blog.hexagons.se/uncategorized/getting-started-with-pixels/)<br>
+[Getting started with Metal in Pixels](http://blog.hexagons.se/uncategorized/getting-started-with-metal-in-pixels/)
+
+[High Quality](http://hexagons.se/pixels/tutorials/pixels_tutorial_1.mov) (1,5 GB) -
+[Mid Quality](http://hexagons.se/pixels/tutorials/pixels_tutorial_1_compressed.mov) (0,5 GB) -
+[Low Quality](http://hexagons.se/pixels/tutorials/pixels_tutorial_1_very_compressed.mov) (200 MB) -
+[Screen Lapse x4](http://hexagons.se/pixels/tutorials/pixels_tutorial_1_screen_lapse_x4.mov) (100 MB)<br>
+Video used: [warm neon birth](https://vimeo.com/104094320) by [BEEPLE](https://www.beeple-crap.com).
 
 ## Docs
 Classes, Delegates and Properties of:<br>
@@ -67,25 +94,6 @@ Classes, Delegates and Properties of:<br>
 [PIX](https://github.com/anton-hexagons/pixels/blob/master/DOCS.md#pix) - 
 [PIXContent](https://github.com/anton-hexagons/pixels/blob/master/DOCS.md#pixcontent-pix-pixout) - 
 [PIXEffect](https://github.com/anton-hexagons/pixels/blob/master/DOCS.md#pixeffect-pix-pixin-pixout)
-
-## Installing
-
-Pod coming soon!
-
-To contribute or test, follow these three steps:
-1. Drag `Pixels.xcodeproj` in to your Xcode project.
-2. Drag `Pixels.framework` under Products to your projects embedded binaries section of the general tab of your app target.
-3. Drag `PixelsShaders.metallib` under Products (from the nested `PixelsShaders.xcodeproj`) to your projects copy bundle resources under build phases of your app target.
-
-To gain camera access, on macOS, check Camera in the App Sandbox in your Xcode project settings under Capabilities.
-
-## Tutorial
-
-[High Quality](http://hexagons.se/pixels/tutorials/pixels_tutorial_1.mov) (1,5 GB) -
-[Mid Quality](http://hexagons.se/pixels/tutorials/pixels_tutorial_1_compressed.mov) (0,5 GB) -
-[Low Quality](http://hexagons.se/pixels/tutorials/pixels_tutorial_1_very_compressed.mov) (200 MB) -
-[Screen Lapse x4](http://hexagons.se/pixels/tutorials/pixels_tutorial_1_screen_lapse_x4.mov) (100 MB)<br>
-Video used: [warm neon birth](https://vimeo.com/104094320) by [BEEPLE](https://www.beeple-crap.com).
 
 ## Example: Camera Effects
 
@@ -175,9 +183,9 @@ A full rotation is defined by 1.0
 A quick and convenient way to blend PIXs<br>
 These are the supported `PIX.BlendingMode` operators:
 
-| `&` | `!&` | `+` | `-` | `*` | `**` | `!**` | `%` | `<>` | `><` | `--` |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| .over | .under | .add | .subtract | .multiply | .power | .gamma | .difference | .minimum | .maximum | .subtractWithAlpha |
+| `&` | `!&` | `+` | `-` | `*` | `**` | `!**` | `%` | `<>` | `><` | `--` | `~` |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| .over | .under | .add | .subtract | .multiply | .power | .gamma | .difference | .minimum | .maximum | .subtractWithAlpha | .average |
 
 ```swift
 let blendPix = (CameraPIX() !** NoisePIX(res: .fullHD(.portrait))) * CirclePIX(res: .fullHD(.portrait))
@@ -258,6 +266,20 @@ Note that exporting resourses like image and video are not yet supported.
 
 -->
 
+## MIDI
+
+Here's an example of live midi values in range 0.0 to 1.0.
+
+```
+let circle = CirclePIX(res: ._1024)
+circle.radius = .midi("#13")
+circle.color = .midi("#17")
+```
+
+You can find the addresses by enabeling logging like this:
+
+`MIDI.main.log = true`
+
 ## High Bit Mode
 
 Some effects like <b>DisplacePIX</b> and <b>SlopePIX</b> can benefit from a higher bit depth.<br>
@@ -336,6 +358,13 @@ lumUniform.value = 0.5
 
 a Live Graphics Node Editor for iPad<br>
 powered by Pixels<br>
+
+<img src="http://hexagons.se/layercam/assets/Layer-Cam.png" width="64"/>
+
+### [Layer Cam](http://hexagons.se/layercam/)
+
+a camera app lets you live layer filters of your choice.<br>
+combine effects to create new cool styles.
 
 ---
 
