@@ -7,7 +7,7 @@
 //
 
 import Cocoa
-import Pixels_macOS
+import PixelKit
 
 class ViewController: NSViewController {
 

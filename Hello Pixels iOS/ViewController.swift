@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import Pixels
+import PixelKit
 
 class ViewController: UIViewController {
 

@@ -6,11 +6,7 @@
 //  Copyright © 2019 Hexagons. All rights reserved.
 //
 
-#if os(iOS)
-import Pixels
-#elseif os(macOS)
-import Pixels_macOS
-#endif
+import PixelKit
 
 class Render {
     
@@ -26,7 +22,7 @@ class Render {
         polygon.rotation = .live / 60
         
         let circle = CirclePIX(res: ._128)
-        circle.radius = 0.25 - .liveWave(for: 5) / 30
+        circle.radius = 0.25 - .wave(for: 5) / 30
         
         let noise = NoisePIX(res: ._128)
         noise.octaves = 3

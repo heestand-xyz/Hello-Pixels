@@ -18,40 +18,9 @@
 		7404EEAB22534BA2004436F4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7404EEA922534BA2004436F4 /* Main.storyboard */; };
 		7404EEB322534BC2004436F4 /* Render.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7404EEB222534BC2004436F4 /* Render.swift */; };
 		7404EEB422534BD5004436F4 /* Render.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7404EEB222534BC2004436F4 /* Render.swift */; };
-		74C10CBD2253A77400EA3CC0 /* Pixels_macOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74C10CBA2253A77200EA3CC0 /* Pixels_macOS.framework */; };
-		74C10CC12253A79500EA3CC0 /* Pixels.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74C10CB92253A77200EA3CC0 /* Pixels.framework */; };
-		74C10CC22253A79500EA3CC0 /* Pixels.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 74C10CB92253A77200EA3CC0 /* Pixels.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		74C10CC42253A79800EA3CC0 /* Pixels_macOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 74C10CBA2253A77200EA3CC0 /* Pixels_macOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		74C10CC52253A7AA00EA3CC0 /* PixelsShaders.metallib in Resources */ = {isa = PBXBuildFile; fileRef = 74C10CBB2253A77200EA3CC0 /* PixelsShaders.metallib */; };
-		74C10CC62253A7AF00EA3CC0 /* PixelsShaders-macOS.metallib in Resources */ = {isa = PBXBuildFile; fileRef = 74C10CBC2253A77200EA3CC0 /* PixelsShaders-macOS.metallib */; };
 		ACDF9182D3900B4EE88BA170 /* Pods_Hello_Pixels_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9ECA34A7E18BDDEA77380703 /* Pods_Hello_Pixels_iOS.framework */; };
 		F7D6463B4F9D1F4CA3C1CDA0 /* Pods_Hello_Pixels_macOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08780440C13CF6EA9B8CB9D5 /* Pods_Hello_Pixels_macOS.framework */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		7404EEB822534CBA004436F4 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				74C10CC42253A79800EA3CC0 /* Pixels_macOS.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7404EEBC22534CC1004436F4 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				74C10CC22253A79500EA3CC0 /* Pixels.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		063A1ECE9162FF8A6E19A7FD /* Pods-Hello Pixels macOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hello Pixels macOS.debug.xcconfig"; path = "Target Support Files/Pods-Hello Pixels macOS/Pods-Hello Pixels macOS.debug.xcconfig"; sourceTree = "<group>"; };
@@ -72,10 +41,6 @@
 		7404EEAC22534BA2004436F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7404EEAD22534BA2004436F4 /* Hello_Pixels_macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Hello_Pixels_macOS.entitlements; sourceTree = "<group>"; };
 		7404EEB222534BC2004436F4 /* Render.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Render.swift; sourceTree = "<group>"; };
-		74C10CB92253A77200EA3CC0 /* Pixels.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pixels.framework; path = Pixels/Pixels.framework; sourceTree = SOURCE_ROOT; };
-		74C10CBA2253A77200EA3CC0 /* Pixels_macOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pixels_macOS.framework; path = Pixels/Pixels_macOS.framework; sourceTree = SOURCE_ROOT; };
-		74C10CBB2253A77200EA3CC0 /* PixelsShaders.metallib */ = {isa = PBXFileReference; lastKnownFileType = "archive.metal-library"; name = PixelsShaders.metallib; path = Pixels/PixelsShaders.metallib; sourceTree = SOURCE_ROOT; };
-		74C10CBC2253A77200EA3CC0 /* PixelsShaders-macOS.metallib */ = {isa = PBXFileReference; lastKnownFileType = "archive.metal-library"; name = "PixelsShaders-macOS.metallib"; path = "Pixels/PixelsShaders-macOS.metallib"; sourceTree = SOURCE_ROOT; };
 		9ECA34A7E18BDDEA77380703 /* Pods_Hello_Pixels_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hello_Pixels_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA35EEB3D9A39E184AE435F9 /* Pods-Hello Pixels iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hello Pixels iOS.debug.xcconfig"; path = "Target Support Files/Pods-Hello Pixels iOS/Pods-Hello Pixels iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		E57F95BEC245852C5268F5D4 /* Pods-Hello Pixels iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hello Pixels iOS.release.xcconfig"; path = "Target Support Files/Pods-Hello Pixels iOS/Pods-Hello Pixels iOS.release.xcconfig"; sourceTree = "<group>"; };
@@ -86,7 +51,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				74C10CC12253A79500EA3CC0 /* Pixels.framework in Frameworks */,
 				ACDF9182D3900B4EE88BA170 /* Pods_Hello_Pixels_iOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -95,7 +59,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				74C10CBD2253A77400EA3CC0 /* Pixels_macOS.framework in Frameworks */,
 				F7D6463B4F9D1F4CA3C1CDA0 /* Pods_Hello_Pixels_macOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -109,7 +72,6 @@
 				7404EEB122534BAF004436F4 /* Source */,
 				7404EE8A22534B63004436F4 /* Hello Pixels iOS */,
 				7404EEA222534BA1004436F4 /* Hello Pixels macOS */,
-				74C10CB82253A76200EA3CC0 /* Pixels */,
 				7404EE8922534B63004436F4 /* Products */,
 				BBE71187522F1729C4AC2BD8 /* Pods */,
 				7BECF79C46B6160760A7CAE5 /* Frameworks */,
@@ -159,18 +121,6 @@
 			path = Source;
 			sourceTree = "<group>";
 		};
-		74C10CB82253A76200EA3CC0 /* Pixels */ = {
-			isa = PBXGroup;
-			children = (
-				74C10CBA2253A77200EA3CC0 /* Pixels_macOS.framework */,
-				74C10CB92253A77200EA3CC0 /* Pixels.framework */,
-				74C10CBC2253A77200EA3CC0 /* PixelsShaders-macOS.metallib */,
-				74C10CBB2253A77200EA3CC0 /* PixelsShaders.metallib */,
-			);
-			name = Pixels;
-			path = "New Group";
-			sourceTree = "<group>";
-		};
 		7BECF79C46B6160760A7CAE5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -188,7 +138,6 @@
 				063A1ECE9162FF8A6E19A7FD /* Pods-Hello Pixels macOS.debug.xcconfig */,
 				6728B2634A288475B1E11C91 /* Pods-Hello Pixels macOS.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -203,7 +152,6 @@
 				7404EE8422534B63004436F4 /* Sources */,
 				7404EE8522534B63004436F4 /* Frameworks */,
 				7404EE8622534B63004436F4 /* Resources */,
-				7404EEBC22534CC1004436F4 /* Embed Frameworks */,
 				01651CD1D312B602497F5883 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
@@ -223,7 +171,6 @@
 				7404EE9D22534BA1004436F4 /* Sources */,
 				7404EE9E22534BA1004436F4 /* Frameworks */,
 				7404EE9F22534BA1004436F4 /* Resources */,
-				7404EEB822534CBA004436F4 /* Embed Frameworks */,
 				575FB1636476B073605EDEB1 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
@@ -277,7 +224,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				74C10CC52253A7AA00EA3CC0 /* PixelsShaders.metallib in Resources */,
 				7404EE9622534B65004436F4 /* LaunchScreen.storyboard in Resources */,
 				7404EE9322534B65004436F4 /* Assets.xcassets in Resources */,
 				7404EE9122534B63004436F4 /* Main.storyboard in Resources */,
@@ -288,7 +234,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				74C10CC62253A7AF00EA3CC0 /* PixelsShaders-macOS.metallib in Resources */,
 				7404EEA822534BA2004436F4 /* Assets.xcassets in Resources */,
 				7404EEAB22534BA2004436F4 /* Main.storyboard in Resources */,
 			);
